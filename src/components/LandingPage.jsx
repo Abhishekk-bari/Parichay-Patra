@@ -2,7 +2,7 @@ import React from 'react';
 import '../fonts/FoundersGrotesk-Semibold.ttf';
 import '../fonts/NeueMontreal-Regular.ttf'; // Third step to use font
 import CircleImg from '../assets/CircleImg.png';
-import { FaArrowDownLong } from "react-icons/fa6";
+import { CiCircleChevDown } from "react-icons/ci";
 
 function LandingPage() {
   return (
@@ -10,7 +10,7 @@ function LandingPage() {
       <div className="textstructure mt-32 text-center font-['FoundersGroteskSemibold']">
         <h1 className="text-9xl">ABHISHEK <span>BARI</span></h1>
         <div className="font-['NeueMontrealRegular']">
-          <p className='text-2xl'>I Create Eye Opening Frontend Websites</p>
+          <p className='text-lg'>Frontend Developer specialized in crafting seamless, interactive websites.</p>
         </div>
         <div className='mt-5'> 
           <img 
@@ -19,6 +19,10 @@ function LandingPage() {
             className="h-40 w-40 object-cover mx-auto"
           />
         </div>
+        <div className='absolute bottom-5 right-5 h-12 w-12 flex items-center justify-center'>
+        
+        <CiCircleChevDown />
+      </div>
 
         {/* //some scroll section that i am using */}
         {/* <div className="flex justify-center mt-5">

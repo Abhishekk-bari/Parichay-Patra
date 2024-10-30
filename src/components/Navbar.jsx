@@ -3,7 +3,7 @@ import '../fonts/NeueMontreal-Regular.ttf'  //third step to use font
 
 function Navbar() {
   return (
-    <div className="w-full px-20 py-2 fixed flex justify-center font-['NeueMontrealRegular']">
+    <div className=" pointer-events-none w-full px-20 py-2 fixed flex justify-center font-['NeueMontrealRegular']">
       <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-full shadow-lg p-4 flex items-center">
         <div className="logo mr-40">
           <svg width="72" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
