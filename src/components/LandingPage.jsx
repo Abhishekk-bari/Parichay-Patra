@@ -3,7 +3,7 @@ import '../fonts/FoundersGrotesk-Semibold.ttf';
 import '../fonts/NeueMontreal-Regular.ttf'; // Third step to use font
 import CircleImg from '../assets/CircleImg.png';
 import { CiCircleChevDown } from "react-icons/ci";
-import { TextReveal } from '@/components/ui/text-reveal'; 
+// import  TextReveal  from '@/components/ui/text-reveal'; 
 
 function LandingPage() {
   return (
@@ -11,7 +11,7 @@ function LandingPage() {
       <div className="textstructure mt-32 text-center font-['FoundersGroteskSemibold']">
         <h1 className="text-9xl">ABHISHEK <span>BARI</span></h1>
         <div className="font-['NeueMontrealRegular']">
-          <TextReveal className='text-lg' text="Frontend Developer specialized in crafting seamless, interactive websites." />
+          <p className='text-lg'>Frontend Developer specialized in crafting seamless, interactive websites</p>
         </div>
         <div className='mt-5'> 
           <img 
@@ -20,10 +20,9 @@ function LandingPage() {
             className="h-40 w-40 object-cover mx-auto"
           />
         </div>
-        <div className='absolute bottom-5 right-5 h-12 w-12 flex items-center justify-center'>
+        <div className='absolute bottom-5 right-5 h-15 w-12 flex items-center justify-center'>
         
-        <CiCircleChevDown />
-      </div>
+        <CiCircleChevDown /></div>
 
         {/* //some scroll section that i am using */}
         {/* <div className="flex justify-center mt-5">
