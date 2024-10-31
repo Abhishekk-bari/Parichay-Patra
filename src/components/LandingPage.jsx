@@ -3,6 +3,7 @@ import '../fonts/FoundersGrotesk-Semibold.ttf';
 import '../fonts/NeueMontreal-Regular.ttf'; // Third step to use font
 import CircleImg from '../assets/CircleImg.png';
 import { CiCircleChevDown } from "react-icons/ci";
+import { TextReveal } from '@/components/ui/text-reveal'; 
 
 function LandingPage() {
   return (
@@ -10,7 +11,7 @@ function LandingPage() {
       <div className="textstructure mt-32 text-center font-['FoundersGroteskSemibold']">
         <h1 className="text-9xl">ABHISHEK <span>BARI</span></h1>
         <div className="font-['NeueMontrealRegular']">
-          <p className='text-lg'>Frontend Developer specialized in crafting seamless, interactive websites.</p>
+          <TextReveal className='text-lg' text="Frontend Developer specialized in crafting seamless, interactive websites." />
         </div>
         <div className='mt-5'> 
           <img 
