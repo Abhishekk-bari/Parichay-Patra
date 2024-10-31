@@ -13,9 +13,9 @@ function Projects() {
         <h1 className="text-7xl font-['NeueMontrealRegular'] tracking-tight">Projects</h1>
       </div>
       <div className='px-20'>
-        <div className="cards w-full flex gap-20 mt-10">
+        <div className="cards w-full  flex gap-20 mt-10">
             
-          <div className='cardcontainer relative w-1/2 h-[75vh]'>
+          <div className='cardcontainer relative w-1/2 h-[70vh]'>
           <h1 className="absolute left-full -translate-x-1/2 top-1/2 -translate-y-1/2 leading-none z-[9] uppercase text-[#CDEA68] font-['FoundersGroteskSemibold'] text-6xl">
           {"TWEET_DECK".split('').map((item, index)=> (
           <span>{item}</span>))}
@@ -24,7 +24,7 @@ function Projects() {
               <img className="w-full h-[80%] object-contain" src={card} alt="Project Card" />
             </div>
           </div>
-          <div className='cardcontainer relative w-1/2 h-[75vh]'>
+          <div className='cardcontainer relative w-1/2 h-[70vh]'>
           <h1 className="absolute right-full translate-x-1/2 top-1/2 -translate-y-1/2 leading-none z-[9] uppercase text-[#CDEA68] font-['FoundersGroteskSemibold'] text-6xl">
           {"SAAS WEBSITE".split('').map((item, index)=> (
           <span>{item}</span>))}

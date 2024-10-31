@@ -7,6 +7,7 @@ import About from './components/About'
 import Eye from './components/Eye'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Eye />
       <Projects />
       <Skills />
+      <Footer />
     </div>
   )
 }

@@ -34,6 +34,20 @@
     url("./fonts//FoundersGrotesk-Semibold.ttf") format("truetype");
     font-weight: semibold;
 }
+
+@font-face {
+        font-family: 'Brandayolq';
+        src: url('./fonts/Branda-yolq.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+@font-face {
+        font-family: 'foxversion5bymickeyfan123daxvfx5';
+        src: url('./fonts/fox_version_5_by_mickeyfan123_daxvfx5.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
 @layer base {
   :root {
         --background: 0 0% 100%;
