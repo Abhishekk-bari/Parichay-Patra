@@ -7,8 +7,8 @@ import { CiCircleChevDown } from "react-icons/ci";
 
 function LandingPage() {
   return (
-    <div className="w-full h-screen flex items-center justify-center">
-      <div className="textstructure mt-32 text-center font-['FoundersGroteskSemibold']">
+    <div data-scroll data-scroll-speed="-.3" className="w-full h-screen flex items-center justify-center pt-1">
+      <div className="textstructure mt-32 px-23 text-center font-['FoundersGroteskSemibold']">
         <h1 className="text-9xl">ABHISHEK <span>BARI</span></h1>
         <div className="font-['NeueMontrealRegular']">
           <p className='text-lg'>Frontend Developer specialized in crafting seamless, interactive websites</p>

@@ -13,21 +13,25 @@ function Footer() {
       <h1 className='text-6xl'>Crafting,</h1>
       <h1 className='text-6xl '>Code Daily"</h1>
       </div>
-      <svg width="72" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className="flex items-center justify-between gap-4">
+          <svg width="72" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 29.5L15 5H20L25 29.5H22.5L21 24H14L12.5 29.5H10Z" fill="currentColor"></path>
             <path d="M30 5H33V29.5H30V5ZM33 17.5C35 17.5 37 19.5 37 21.5C37 23.5 35 25.5 33 25.5H30V17.5H33Z" fill="currentColor"></path>
             <path d="M45 5H48V29.5H45V18C45 16 47 15 48 15H50V18H48V25.5H45V5Z" fill="currentColor"></path>
             <path d="M55 5H58V29.5H55V5Z" fill="currentColor"></path>
             <path d="M65 5H68V29.5H65V5Z" fill="currentColor"></path>
           </svg>
+          
+        </div>
       </div>
       <div className="w-1/2  ">
       <h1 className='text-[4vw] font-["foxversion5bymickeyfan123daxvfx5"]'>GET IN TOUCH</h1>
-      <div className="font-['NeueMontrealRegular']">
-        <a className="block" href="#">LinkedIN</a>
-        <a className="block" href="#">E-Mail</a>
-        <a className="block" href="#">Git-Hub</a>
+      <div className="font-['NeueMontrealRegular'] mt-20  ">
+        <a className="block text-xl underline" href="#">LinkedIN</a>
+        <a className="block text-xl underline" href="#">E-Mail</a>
+        <a className="block text-xl" href="#">Git-Hub</a>
       </div>
+      <p className="text-lg font-['NeueMontrealRegular'] pt-72">© 2024 Abhishek Bari. All rights reserved.</p>
       </div>
     </div>
   )

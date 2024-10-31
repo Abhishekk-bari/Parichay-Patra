@@ -8,8 +8,13 @@ import Eye from './components/Eye'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 function App() {
+
+  const locomotiveScroll = new LocomotiveScroll();
+
   return (
     <div className="w-full h-screen">
         <Banner />
