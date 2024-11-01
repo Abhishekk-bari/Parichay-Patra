@@ -1,9 +1,10 @@
 import React from 'react';
-import '../fonts/NeueMontreal-Regular.ttf'  //third step to use font
+import { Link } from 'react-router-dom';
+import '../fonts/NeueMontreal-Regular.ttf';
 
 function Navbar() {
   return (
-    <div className=" pointer-events-none w-full px-20 py-2 fixed flex justify-center font-['NeueMontrealRegular']">
+    <div className="w-full px-20 py-2 fixed flex justify-center font-['NeueMontrealRegular']">
       <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-full shadow-lg p-4 flex items-center">
         <div className="logo mr-40">
           <svg width="72" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,9 +16,9 @@ function Navbar() {
           </svg>
         </div>
         <div className="flex gap-10">
-          {["About", "Projects", "Contact"].map((item, index) => (
-            <a key={index} className="text-lg capitalize font-light">{item}</a>
-          ))}
+          <Link to="/me" className="text-lg capitalize font-light">About</Link>
+          <Link to="/work" className="text-lg capitalize font-light">Projects</Link>
+          <Link to="/contact" className="text-lg capitalize font-light">Contact</Link>
         </div>
       </div>
     </div>

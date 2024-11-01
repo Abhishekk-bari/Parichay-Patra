@@ -3,6 +3,7 @@ import '../fonts/FoundersGrotesk-Semibold.ttf';
 import '../fonts/NeueMontreal-Regular.ttf'; // Third step to use font
 import CircleImg from '../assets/CircleImg.png';
 import { CiCircleChevDown } from "react-icons/ci";
+import { Button } from './ui/button';
 // import  TextReveal  from '@/components/ui/text-reveal'; 
 
 function LandingPage() {
@@ -19,6 +20,7 @@ function LandingPage() {
             alt='profile image' 
             className="h-40 w-40 object-cover mx-auto"
           />
+          <Button className="mt-10 font-thin">Download</Button>
         </div>
         <div className='absolute bottom-5 right-5 h-15 w-12 flex items-center justify-center'>
         

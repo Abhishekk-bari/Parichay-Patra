@@ -17,7 +17,7 @@ function Eye() {
   });
 
   return (
-    <div className="eyes w-full h-screen overflow-hidden">
+    <div className="eyes w-full h-screen overflow-hidden bg-[#ffff]">
       <div data-scroll data-scroll-speed="-.7" className='relative w-[70vw] h-[40vw] mt-20 ml-64 bg-center bg-[url("./assets/tropical-flower-7599292_1280.jpg")]'>
         <div className="absolute flex top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]  gap-20">
           <div className="flex items-center justify-center w-[15vw] h-[15vw] rounded-full bg-zinc-100 ">
