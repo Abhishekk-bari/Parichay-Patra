@@ -1,3 +1,4 @@
+// Import required dependencies
 import React, { useEffect, useRef } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -11,39 +12,46 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Me from './pages/Me';
 import Work from './pages/Work';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
+// Import Lenis instead of LocomotiveScroll
+import Lenis from '@studio-freight/lenis';
 
 function App() {
-  // const scrollRef = useRef(null);
-  // const location = useLocation();
-  // const locomotiveScrollRef = useRef(null);
+  const scrollRef = useRef(null);
+  const location = useLocation();
+  const lenisRef = useRef(null);
 
-  // useEffect(() => {
-  //   // Initialize LocomotiveScroll on mount
-  //   locomotiveScrollRef.current = new LocomotiveScroll({
-  //     el: scrollRef.current,
-  //     smooth: true,
-  //   });
+  useEffect(() => {
+    // Initialize Lenis on mount
+    lenisRef.current = new Lenis({
+      duration: 1.2,  // Duration for smooth scrolling
+      easing: (t) => t,  // Default easing function
+      smooth: true,
+    });
 
-  //   // Clean up LocomotiveScroll on unmount
-  //   return () => {
-  //     if (locomotiveScrollRef.current) {
-  //       locomotiveScrollRef.current.destroy();
-  //     }
-  //   };
-  // }, []);
+    // Request animation frame to update Lenis
+    const animate = (time) => {
+      lenisRef.current.raf(time);
+      requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
 
-  // useEffect(() => {
-  //   // Reinitialize LocomotiveScroll on route change
-  //   if (locomotiveScrollRef.current) {
-  //     locomotiveScrollRef.current.update();
-  //     locomotiveScrollRef.current.scrollTo(0, { duration: 0 }); // Reset scroll position
-  //   }
-  // }, [location.pathname]);
-  const locomotiveScroll = new LocomotiveScroll();
+    // Cleanup on unmount
+    return () => {
+      if (lenisRef.current) {
+        lenisRef.current.destroy();
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    // Trigger Lenis scroll position reset on route change
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { duration: 0 }); // Reset scroll position
+    }
+  }, [location.pathname]);
+
   return (
-    <div  className="w-full h-screen">
+    <div ref={scrollRef} className="w-full h-screen">
       <Navbar />
 
       <Routes>

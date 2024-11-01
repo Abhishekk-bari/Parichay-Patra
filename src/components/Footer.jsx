@@ -1,13 +1,15 @@
 import React from 'react'
 import '../fonts/FoundersGrotesk-Semibold.ttf';
 import '../fonts/fox_version_5_by_mickeyfan123_daxvfx5.ttf'
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 
 
 function Footer() {
 
-    const Links = []
+
   return (
-    <div className="rounded-tl-3xl rounded-tr-3xl flex gap-20 w-full h-screen p-20 bg-[#5547ff] ">
+    <div data-scroll data-scroll-section data-scroll-speed="-.2" className="rounded-tl-3xl rounded-tr-3xl flex gap-20 w-full h-screen p-20 bg-[#5547ff] ">
       <div className="flex h-full flex-col text-white justify-between font-['foxversion5bymickeyfan123daxvfx5'] w-1/2">
       <div className='heading'>
       <h1 className='text-8xl'>Crafting,</h1>

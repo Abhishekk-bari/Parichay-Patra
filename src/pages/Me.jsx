@@ -2,10 +2,12 @@ import React from 'react'
 
 function Me() {
   return (
-    <div className="w-full bg-[#010101] text-white h-screen flex items-center justify-center pt-1">
-      <h1>About section</h1>
+    <div className="pt-20 ">
+    <div className="bg-zinc-800 w-90vw] h-[40vw] p-10 rounded-3xl">
+      <h1 className="">About ME</h1>
+    </div>
     </div>
   )
 }
 
-export default Me
+export default Me;

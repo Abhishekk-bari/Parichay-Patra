@@ -19,7 +19,7 @@ function Projects() {
   return (
     <div className='w-full py-20  bg-[#ff7ac9]'>
       <div className='w-full px-20 border-b-[1px] border-zinc-300 pb-10'>
-        <h1 className="text-7xl font-['NeueMontrealRegular'] tracking-tight">Projects</h1>
+        <h1 className="text-7xl text-white font-['NeueMontrealRegular'] tracking-tight">Projects</h1>
       </div>
       <div className='px-20'>
         <div className="cards w-full flex gap-20 mt-10">
