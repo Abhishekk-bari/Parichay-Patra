@@ -24,7 +24,7 @@ function LandingPage() {
         </div>
         <div className='absolute bottom-5 right-5 h-15 w-12 flex items-center justify-center'>
         
-        <CiCircleChevDown /></div>
+        <CiCircleChevDown className='h-8 w-8'/></div>
 
         {/* //some scroll section that i am using */}
         {/* <div className="flex justify-center mt-5">
