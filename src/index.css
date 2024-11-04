@@ -47,6 +47,12 @@
         font-weight: normal;
         font-style: normal;
     }
+@font-face {
+        font-family: 'Freedom10eM';
+        src: url('./fonts/Freedom-10eM.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 @layer base {
   :root {

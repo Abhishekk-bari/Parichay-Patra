@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../fonts/NeueMontreal-Regular.ttf';
+// import { Button } from './ui/button';
+import resume from '../assets/Abhishek_Bari-resume.pdf'
+
 
 function Navbar() {
   return (
@@ -16,9 +19,11 @@ function Navbar() {
           </svg>
         </div>
         <div className="flex gap-10">
-          <Link to="/me" className="text-lg capitalize font-light">About</Link>
-          <Link to="/work" className="text-lg capitalize font-light">Projects</Link>
-          <Link to="/contact" className="text-lg capitalize font-light">Contact</Link>
+          <Link to="/me" className="text-lg  font-light">About</Link>
+          <Link to="/work" className="text-lg font-light">Projects</Link>
+          <Link to="/contact" className="text-lg font-light">Contact</Link>
+          <a href={resume} download="resume" alt="resume">Resume</a>
+          {/* <Button className="text-lg rounded-full bg-transparent text-gray-500">Download</Button> */}
         </div>
       </div>
     </div>

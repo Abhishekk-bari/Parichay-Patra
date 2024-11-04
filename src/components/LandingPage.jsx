@@ -1,45 +1,72 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../fonts/FoundersGrotesk-Semibold.ttf';
-import '../fonts/NeueMontreal-Regular.ttf'; // Third step to use font
+import '../fonts/NeueMontreal-Regular.ttf';
 import CircleImg from '../assets/CircleImg.png';
 import { CiCircleChevDown } from "react-icons/ci";
-import { Button } from './ui/button';
-// import  TextReveal  from '@/components/ui/text-reveal'; 
+import { motion } from 'framer-motion';
 
 function LandingPage() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isLandingPage, setIsLandingPage] = useState(true); // Track if on landing page
+
+  useEffect(() => {
+    // Track mouse position only if on landing page
+    if (isLandingPage) {
+      const mouseMove = e => {
+        setMousePosition({
+          x: e.clientX,
+          y: e.clientY
+        });
+      };
+      window.addEventListener("mousemove", mouseMove);
+      return () => {
+        window.removeEventListener("mousemove", mouseMove);
+      };
+    }
+  }, [isLandingPage]);
+
+  const variants = {
+    default: {
+      x: mousePosition.x - 4,
+      y: mousePosition.y - 4
+    }
+  };
+
   return (
-    <div data-scroll data-scroll-speed="-.3" className="w-full h-screen flex items-center justify-center pt-1">
+    <div 
+      data-scroll 
+      data-scroll-speed="-.3" 
+      className="cursor-none w-full h-screen flex items-center justify-center pt-1"
+      onMouseEnter={() => setIsLandingPage(true)}  // Set to true on mouse enter
+      onMouseLeave={() => setIsLandingPage(false)} // Set to false on mouse leave
+    >
       <div className="textstructure mt-32 px-23 text-center font-['FoundersGroteskSemibold']">
         <h1 className="text-9xl">ABHISHEK <span>BARI</span></h1>
+
+        {/* Render the custom cursor only if on landing page */}
+        {isLandingPage && (
+          <motion.div 
+            variants={variants}
+            animate="default"
+            className="bg-black h-8 w-8 fixed top-0 left-0 rounded-full"
+          />
+        )}
+
         <div className="font-['NeueMontrealRegular']">
           <p className='text-lg'>Frontend Developer specialized in crafting seamless, interactive websites</p>
         </div>
-        <div className='mt-5'> 
+
+        <div className='mt-5'>
           <img 
             src={CircleImg} 
             alt='profile image' 
             className="h-40 w-40 object-cover mx-auto"
           />
-          <Button className="mt-10 font-thin">Download</Button>
         </div>
+
         <div className='absolute bottom-5 right-5 h-15 w-12 flex items-center justify-center'>
-        
-        <CiCircleChevDown className='h-8 w-8'/></div>
-
-        {/* //some scroll section that i am using */}
-        {/* <div className="flex justify-center mt-5">
-          <a 
-            href="#" 
-            className="inline-flex items-center gap-3 border py-2 px-4 rounded-lg border-white transition-all duration-300 hover:bg-white/10"
-          >
-            <span className="bg-gradient-to-r from-red-500 to-blue-500 text-transparent bg-clip-text [-webkit-background-clip:text]">
-              Scroll
-            </span>
-            <FaArrowDownLong className="text-white w-6 h-6" />
-          </a>
-        </div> */}
-
-
+          <CiCircleChevDown className='h-8 w-8'/>
+        </div>
       </div>
     </div>
   );
