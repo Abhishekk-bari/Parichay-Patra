@@ -4,6 +4,8 @@ import '../fonts/NeueMontreal-Regular.ttf';
 import CircleImg from '../assets/CircleImg.png';
 import { CiCircleChevDown } from "react-icons/ci";
 import { motion } from 'framer-motion';
+import GradualSpacing from "../components/ui/gradual-spacing";
+
 
 function LandingPage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -41,7 +43,8 @@ function LandingPage() {
       onMouseLeave={() => setIsLandingPage(false)} // Set to false on mouse leave
     >
       <div className="textstructure mt-32 px-23 text-center font-['FoundersGroteskSemibold']">
-        <h1 className="text-9xl">ABHISHEK <span>BARI</span></h1>
+        <h1 className="text-9xl font-[]">
+        <GradualSpacing text="ABHISHEK BARI"/></h1>
 
         {/* Render the custom cursor only if on landing page */}
         {isLandingPage && (
@@ -60,7 +63,7 @@ function LandingPage() {
           <img 
             src={CircleImg} 
             alt='profile image' 
-            className="h-40 w-40 object-cover mx-auto"
+            className="h-40 w-40  object-cover mx-auto"
           />
         </div>
 

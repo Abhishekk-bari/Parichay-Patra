@@ -5,6 +5,7 @@ import '../fonts/NeueMontreal-Regular.ttf';
 import resume from '../assets/Abhishek_Bari-resume.pdf'
 
 
+
 function Navbar() {
   return (
     <div className="w-full px-20 py-2 fixed flex justify-center font-['NeueMontrealRegular']">

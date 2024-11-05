@@ -59,6 +59,12 @@
         font-weight: normal;
         font-style: normal;
     }
+@font-face {
+        font-family: 'SofiaRegular';
+        src: url('./fonts/Sofia-Regular.otf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 @layer base {
   :root {

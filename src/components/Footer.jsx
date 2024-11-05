@@ -29,10 +29,10 @@ function Footer() {
       <div className="w-1/2 text-white ">
       <h1 className='text-[5vw] font-["foxversion5bymickeyfan123daxvfx5"]'>GET IN TOUCH</h1>
       <div className="font-['NeueMontrealRegular'] mt-20  ">
-        <a className="block text-xl pb-2 underline" href="#">LinkedIN</a>
-        <a className="block text-xl pb-2 underline" href="#">E-Mail</a>
-        <a className="block text-xl pb-2 underline" href="#">Git-Hub</a>
-        <a className="block text-xl pb-2 underline" href="#">Twitter</a>
+        <a className="block text-xl pb-2 underline" href="https://www.linkedin.com/in/abhishek-bari-b5bb0b22b/">LinkedIN</a>
+        <a className="block text-xl pb-2 underline" href="iam.abhishekbarii@gmail.com">E-Mail</a>
+        <a className="block text-xl pb-2 underline" href="https://github.com/Abhishekk-bari">Git-Hub</a>
+        <a className="block text-xl pb-2 underline" href="https://x.com/bariabh1">Twitter</a>
         <a className="block text-xl pb-2 underline" href="#">Instagram</a>
         <a className="block text-xl pb-2 underline" href="#">Portfolio</a>
       </div>
