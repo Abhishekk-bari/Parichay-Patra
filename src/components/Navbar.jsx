@@ -22,8 +22,8 @@ function Navbar() {
         <div className="flex gap-10">
           <Link to="/me" className="text-lg  font-light">About</Link>
           <Link to="/work" className="text-lg font-light">Projects</Link>
-          <Link to="/contact" className="text-lg font-light">Contact</Link>
-          <a href={resume} download="resume" alt="resume">Resume</a>
+          {/* <Link href="/footer" className="text-lg font-light">Contact</Link> */}
+          <a href={resume} className="text-lg font-light" download="resume" alt="resume">Resume</a>
           {/* <Button className="text-lg rounded-full bg-transparent text-gray-500">Download</Button> */}
         </div>
       </div>

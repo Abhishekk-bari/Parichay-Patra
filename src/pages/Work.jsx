@@ -38,7 +38,7 @@ function Work() {
                 <SiTypescript size={30} title="TypeScript" />
                 <FaAws size={30} title="AWS" />
               </div>
-              <p className="mt-4 italic">TweetDeck is a full-stack application for managing tweets, providing a dynamic interface for users to view and post tweets efficiently.</p>
+              <p className="mt-4 text-lg">TweetDeck is a full-stack application for managing tweets, providing a dynamic interface for users to view and post tweets efficiently.</p>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ function Work() {
                 <SiTypescript size={30} title="TypeScript" />
                 <FaAws size={30} title="AWS" />
               </div>
-              <p className="mt-4 mr-70 italic">This project focuses on developing a dark-themed SaaS landing page that showcases your abilities in front-end technologies. By the end of the tutorial, you'll have a fully functional landing page equipped with smooth animations and responsive design, ready to impress potential employers.</p>
+              <p className="mt-4 mr-70 ">This project focuses on developing a dark-themed SaaS landing page that showcases your abilities in front-end technologies. By the end of the tutorial, you'll have a fully functional landing page equipped with smooth animations and responsive design, ready to impress potential employers.</p>
             </div>
             <a href="https://saas-landing-page-production.up.railway.app/" target="_blank" rel="noopener noreferrer">
               <video
