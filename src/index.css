@@ -53,6 +53,12 @@
         font-weight: normal;
         font-style: normal;
     }
+@font-face {
+        font-family: '28DaysLater';
+        src: url('./fonts/28 Days Later.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 @layer base {
   :root {

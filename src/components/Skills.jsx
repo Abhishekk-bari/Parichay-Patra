@@ -39,7 +39,7 @@ function Skills() {
     
     <div className="w-full h-fit p-20 bg-zinc-100 rounded-tl-3xl rounded-tr-3xl text-zinc-900">
       <div className='w-full '>
-      <h1 className="border-b-[1px] border-zinc-300 pb-20 text-7xl font-['Freedom10eM'] tracking-tight">Skills</h1>
+      <h1 className="border-b-[1px] border-zinc-300 pb-20 text-7xl font-['NeueMontrealRegular'] tracking-tight">Skills</h1>
       <IconCloud iconSlugs={slugs} />
       </div>
     </div>
