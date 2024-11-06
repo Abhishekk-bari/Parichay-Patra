@@ -2,7 +2,7 @@ import React from 'react';
 import '../fonts/FoundersGrotesk-Semibold.ttf';
 import '../fonts/28 Days Later.ttf';
 import SparklesText from "../components/ui/sparkles-text";
-import image from '../assets/image.jpg';
+import image from '../assets/image.jpg'; // Importing profile image
 
 function Me() {
   return (
@@ -18,7 +18,7 @@ function Me() {
           
           <div className="mt-20 lg:mt-0 lg:ml-10 text-white mb-5">
             <h2 className="text-3xl mb-4 font-bold">Namaste🙏<span> I'm Abhishek Bari,</span></h2>
-            <p className='text-xl mb-4'> {/* Added margin-bottom for spacing */}
+            <p className='text-xl mb-4'>
               I'm Abhishek Bari, your friendly neighborhood frontend developer, armed with a keyboard and a passion for creating stunning web experiences. If you ever need someone to turn coffee into code, I'm your guy! ☕💻
             </p>
             <p className='text-xl mb-4'> {/* Split into separate paragraphs for better spacing */}
@@ -36,18 +36,14 @@ function Me() {
             <p className='text-xl'>
               So, if you're looking for someone who can bring your ideas to life with a dash of humor and a sprinkle of creativity, look no further! Let’s connect and make some web magic happen!
             </p>
-            
-          </div>
-          
 
+          </div>
         </div>
-        <div className="text-white ml-20 mt-10 flex space-x-5  font-['28DaysLater']">
-              <h1 className=" text-[10vw]">Stand out.</h1>
-              <h1 className=" text-[10vw]">Be cool</h1>
-            </div>
-       
+        <div className="text-white ml-20 mt-10 flex space-x-5 font-['28DaysLater']">
+          <h1 className="text-[10vw]">Stand out.</h1>
+          <h1 className="text-[10vw]">Be cool</h1>
+        </div>
       </div>
-     
     </div>
   );
 }

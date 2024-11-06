@@ -9,7 +9,7 @@ function Footer() {
 
 
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.2" className="rounded-tl-3xl rounded-tr-3xl flex gap-20 w-full h-screen p-28  bg-[#5547ff] ">
+    <div data-scroll data-scroll-section data-scroll-speed="-.2" className="rounded-tl-3xl rounded-tr-3xl flex gap-20 w-full h-[50vw] p-28  bg-[#5547ff] ">
       <div className="flex h-full flex-col text-white justify-between font-['foxversion5bymickeyfan123daxvfx5'] w-1/2">
       <div className='heading'>
       <h1 className='text-8xl'>Crafting,</h1>

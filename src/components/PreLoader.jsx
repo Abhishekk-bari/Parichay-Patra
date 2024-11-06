@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import TypingAnimation from "../components/ui/typing-animation";
+
 const Preloader = ({ setLoading }) => {
   const [counter, setCounter] = useState(0);
 
@@ -23,14 +24,16 @@ const Preloader = ({ setLoading }) => {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 flex items-center justify-center bg-zinc-100 z-50"
+        className="fixed inset-0 flex items-center justify-center bg-cover bg-center z-50"
+        style={{ backgroundImage: 'url()' }} // Replace with your image path
         initial={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="text-center text-zinc-900 ">
-          <TypingAnimation className="text-8xl font-['foxversion5bymickeyfan123daxvfx5']" text="Namaste" />
+          <TypingAnimation className="text-9xl font-['BriscaMieraDEMO']" text="Namaste" />
         </div>
+        
         {/* Counter positioned at the bottom right */}
         <div className="absolute bottom-0 right-0 mb-4 mr-4 font-['FoundersGroteskSemibold'] text-zinc-900 text-9xl">
           {counter}%

@@ -65,6 +65,12 @@
         font-weight: normal;
         font-style: normal;
     }
+@font-face {
+        font-family: 'BriscaMieraDEMO';
+        src: url('./fonts/Brisca Miera DEMO.otf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 @layer base {
   :root {
@@ -129,3 +135,4 @@
     @apply bg-background text-foreground;
     }
 }
+

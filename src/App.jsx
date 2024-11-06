@@ -14,12 +14,15 @@ import Me from './pages/Me';
 import Work from './pages/Work';
 import Lenis from '@studio-freight/lenis';
 import Preloader from './components/Preloader';
+// import LocomotiveScroll from 'locomotive-scroll';              // scroll animation library 
 
 function App() {
   const [loading, setLoading] = useState(true); // Track loading state
   const scrollRef = useRef(null);
   const location = useLocation();
   const lenisRef = useRef(null);
+
+  // const scroll = new LocomotiveScroll();
 
   useEffect(() => {
     // Initialize Lenis on mount

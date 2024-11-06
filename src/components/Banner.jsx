@@ -2,12 +2,12 @@ import React from 'react'
 
 function Banner() {
   return (
-    <div className="py-2  text-center bg-[linear-gradient(to_right,#FCD6FF,#29D8FF,#FFFD80,#F89ABF,#FCD6FF)]">
+    <div className=" bg-[linear-gradient(to_right,#FCD6FF,#29D8FF,#FFFD80,#F89ABF,#FCD6FF)]">
       <div className="container">
-        <p className="font-medium">
-          <span className="sm:inline hidden"></span>
-        {/* <a href="#" className="underline underline-offset-4 ">
-        Explore the demo </a> */}
+        <p className="font-thin text-left">
+          {/* <span className="sm:inline hidden"></span> */}
+        <a href="#" className="pl-5">
+        Abhishek Bari | Frontend Developer </a>
         </p>
 
       </div>
@@ -16,4 +16,4 @@ function Banner() {
   )
 }
 
-export default Banner
+export default Banner;
