@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import Me from './pages/Me';
 import Work from './pages/Work';
 import Lenis from '@studio-freight/lenis';
-import Preloader from './components/Preloader';
+import PreLoader from './components/PreLoader';
 // import LocomotiveScroll from 'locomotive-scroll';              // scroll animation library 
 
 function App() {
@@ -57,7 +57,7 @@ function App() {
   return (
     <div ref={scrollRef} className="w-full h-screen">
       {loading ? (
-        <Preloader setLoading={setLoading} /> // Show preloader if loading
+        <PreLoader setLoading={setLoading} /> // Show preloader if loading
       ) : (
         <>
           <Navbar />
