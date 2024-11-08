@@ -46,7 +46,7 @@ function LandingPage() {
         {/* Flex container for ABHISHEK, Image, and BARI */}
         <div className="flex items-center justify-center space-x-10">
           <h1 className="text-9xl">
-            <GradualSpacing text="ABHISHEK" />
+            <GradualSpacing text="ABHI" />
           </h1>
 
           <img 
