@@ -1,8 +1,8 @@
 # React + Vite
-![Uploading portfolio thumbnil.png…]()
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.![Uploading portfolio thumbnil.png…]()
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+![portfolio thumbnil](https://github.com/user-attachments/assets/88ab1d30-1d45-4641-8d0b-947ed206cd8a)
 
 Currently, two official plugins are available:
 
