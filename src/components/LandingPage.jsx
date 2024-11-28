@@ -41,28 +41,28 @@ function LandingPage() {
       onMouseEnter={() => setIsLandingPage(true)}  // Set to true on mouse enter
       onMouseLeave={() => setIsLandingPage(false)} // Set to false on mouse leave
     >
-      <div className="textstructure mt-32 px-23 text-center font-['FoundersGroteskSemibold']">
+      <div className="textstructure mt-32 px-6 md:px-23 text-center font-['FoundersGroteskSemibold']">
         
         {/* Flex container for ABHISHEK, Image, and BARI */}
-        <div className="flex items-center justify-center space-x-10">
-          <h1 className="text-9xl">
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-10 space-y-5 md:space-y-0">
+          <h1 className="text-5xl md:text-9xl">
             <GradualSpacing text="ABHISHEK" />
           </h1>
 
           <img 
             src={CircleImg} 
             alt="profile image" 
-            className="h-40 w-40 object-cover mx-auto"
+            className="h-24 w-24 md:h-40 md:w-40 object-cover mx-auto"
           />
 
-          <h1 className="text-9xl">
+          <h1 className="text-5xl md:text-9xl">
             <GradualSpacing text="BARI" />
           </h1>
         </div>
 
         {/* Description text below the names and image */}
         <div className="font-['NeueMontrealRegular'] mt-6">
-          <p className="text-lg">
+          <p className="text-sm md:text-lg">
             Frontend Developer specialized in crafting seamless, interactive websites
           </p>
         </div>
@@ -72,12 +72,12 @@ function LandingPage() {
           <motion.div 
             variants={variants}
             animate="default"
-            className="bg-black h-8 w-8 fixed top-0 left-0 rounded-full"
+            className="bg-black h-4 w-4 md:h-8 md:w-8 fixed top-0 left-0 rounded-full"
           />
         )}
 
         <div className='absolute bottom-5 right-5 h-15 w-12 flex items-center justify-center'>
-          <CiCircleChevDown className='h-8 w-8'/>
+          <CiCircleChevDown className='h-6 w-6 md:h-8 md:w-8'/>
         </div>
       </div>
     </div>
