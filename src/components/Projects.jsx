@@ -1,6 +1,7 @@
 import React from 'react';
 import '../fonts/NeueMontreal-Regular.ttf';
-import card from '../assets/card 3.png';
+import card3 from '../assets/card 3.png';
+import card from '../assets/card3.mp4'
 import card2 from '../assets/card2.png';
 import '../fonts/FoundersGrotesk-Semibold.ttf';
 import { motion, useAnimation } from 'framer-motion';
@@ -67,6 +68,29 @@ function Projects() {
             </h1>
             <div className='card w-full h-full rounded-lg overflow-hidden bg-zinc-300 relative'>
               <img className="w-full h-full object-cover" src={card2} alt="Card Image" />
+            </div>
+          </motion.div>
+
+          {/* Third Card */}
+          <motion.div 
+            onHoverStart={() => handleHover(1)} 
+            onHoverEnd={() => handleHoverEnd(1)} 
+            className='cardcontainer relative w-1/2 h-[70vh]'
+          >
+            <h1 className="absolute flex right-full translate-x-1/2 top-1/2 -translate-y-1/2 leading-none z-[9] uppercase text-[#CDEA68] font-['FoundersGroteskSemibold'] text-6xl">
+              {"SAAS WEBSITE".split('').map((item, index) => (
+                <motion.span 
+                  initial={{ y: "100%", opacity: 0 }} 
+                  animate={controls[1]} 
+                  className="inline-block"
+                  key={index}
+                >
+                  {item}
+                </motion.span>
+              ))}
+            </h1>
+            <div className='card w-full h-full rounded-lg overflow-hidden bg-zinc-300 relative'>
+              <img className="w-full h-full object-cover" src={card3} alt="Card Image" />
             </div>
           </motion.div>
 
